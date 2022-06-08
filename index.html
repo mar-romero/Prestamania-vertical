@@ -1,0 +1,883 @@
+<!DOCTYPE HTML>
+<!--
+Read Only by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+
+Trabajo realizado, cambair el codigo del color, busca el codigo hex del color que desea y lo cambia dejando el #4
+-->
+<html>
+<head>
+	<title>Prestamía</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--<script type="text/javascript" src="assets/js/BLOQUEO-2020.json"></script>-->
+	<link rel="shortcut icon" href="images/LOGO.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	
+	<!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- End SlidesJS Required -->
+
+	<!-- CSS for slidesjs.com example -->
+	<link rel="stylesheet" href="css/example.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- End CSS for slidesjs.com example -->
+
+	<!-- SlidesJS Optional: If you'd like to use this design -->
+	<style>
+
+		/* body {
+	-webkit-font-smoothing: antialiased;
+	font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #232525;
+	padding-top:70px;
+	} */
+	div.sticky{
+		position: fixed;
+		bottom: 2%;
+		left: 1%;
+		z-index: 50;
+		width: 3%;
+		text-decoration: none !important;
+
+	}
+	.layout2 {
+  width: auto;
+  height: auto;
+
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container1{
+	width: 100% !important;
+}
+	#slides {
+		display: none;
+		margin:0px;
+		height: auto;
+	}
+
+	#slides .slidesjs-navigation {
+		margin-top:5px;
+	}
+#img2{
+	width: 75% !important;
+  	margin-left: 13%;
+	margin-top: auto;
+	object-fit:contain;
+	height: 100%;
+}
+	a.slidesjs-next,
+	a.slidesjs-previous,
+	a.slidesjs-play,
+	a.slidesjs-stop {
+		background-image: url(img/btns-next-prev.png);
+		background-repeat: no-repeat;
+		display:block;
+		width:12px;
+		height:18px;
+
+		text-indent: -9999px;
+		float: left;
+		margin-right:5px;
+		text-decoration: none;
+	}
+
+	a.slidesjs-next {
+		margin-right:10px;
+		background-position: -12px 0;
+		text-decoration: none;
+	}
+
+	a:hover.slidesjs-next {
+		background-position: -12px -18px;
+		text-decoration: none;
+	}
+
+	a.slidesjs-previous {
+		background-position: 0 0;
+		text-decoration: none;
+	}
+
+	a:hover.slidesjs-previous {
+		background-position: 0 -18px;
+		text-decoration: none;
+	}
+
+	a.slidesjs-play {
+		width:15px;
+		background-position: -25px 0;
+		text-decoration: none;
+	}
+
+	a:hover.slidesjs-play {
+		background-position: -25px -18px;
+		text-decoration: none;
+	}
+
+	a.slidesjs-stop {
+		width:18px;
+		background-position: -41px 0;
+		text-decoration: none;
+	}
+
+	a:hover.slidesjs-stop {
+		background-position: -41px -18px;
+		text-decoration: none;
+	}
+
+	.slidesjs-pagination {
+		margin: 7px 0 0;
+		float: right;
+		list-style: none;
+		text-decoration: none;
+	}
+
+	.slidesjs-pagination li {
+		float: left;
+		margin: 0 1px;
+		text-decoration: none;
+	}
+
+	.slidesjs-pagination li a {
+		display: block;
+		width: 13px;
+		height: 0;
+		padding-top: 13px;
+		background-image: url(img/pagination.png);
+		background-position: 0 0;
+		float: left;
+
+		text-decoration: none;
+	}
+
+	.slidesjs-pagination li a.active,
+	.slidesjs-pagination li a:hover.active {
+		background-position: 0 -13px;
+		text-decoration: none;
+	}
+
+	.slidesjs-pagination li a:hover {
+		background-position: 0 -26px
+	}
+
+	#slides a:link,
+	#slides a:visited {
+		color: #333;
+		text-decoration: none;
+	}
+
+	#slides a:hover,
+	#slides a:active {
+		text-decoration: none;
+	}
+
+	.navbar {
+		overflow: hidden
+	}
+	</style>
+	<!-- End SlidesJS Optional-->
+
+	<!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+	<style>
+	#slides {
+		display: none
+	}
+
+	.container {
+		margin: 0 auto
+	}
+
+	/* For tablets & smart phones */
+	@media (max-width: 767px) {
+		body {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.container {
+			width: auto
+		}
+		div.sticky{
+			width: 10%;
+		}
+		audio{
+			width:100%;
+		}
+		
+		#img2{
+			width: 75% !important;
+  	margin-left: 15%;
+	object-fit:cover!important;
+	height: 100% !important;
+	width: 450px;
+}
+	}
+
+	/* For smartphones */
+	@media (max-width: 480px) {
+		.contact{
+			width:33%;
+
+		}
+		#img2{
+			width: 75% !important;
+  	margin-left: 12%;
+	object-fit:cover!important;
+	height: 100% !important;
+	width: 450px;
+}
+		.imgcont{
+			width:33%;
+
+		}
+		#imgca{
+			width:1px;
+
+		}
+
+		.layout2 {
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  gap: 8px;
+  grid-auto-flow: row dense;
+
+  justify-content: start;
+  align-content: start;
+
+}
+.imgcon{
+margin-left: 40px;
+margin-bottom: 20px;
+}
+}
+	
+
+	/* For smaller displays like laptops */
+	@media (min-width: 768px) and (max-width: 979px) {
+		.container {
+			width: 724px
+		}
+	}
+
+	/* For larger displays */
+	@media (min-width: 1200px) {
+		.container {
+			width: 1170px
+		}
+	}
+
+#sinestilo{
+	text-decoration: underline wavy red; ;
+}
+
+
+
+	</style>
+	<!-- SlidesJS Required: -->
+</head>
+<body class="is-preload">
+
+	<!-- Header -->
+	<section id="header">
+		<header>
+			<!-- <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span> -->
+			<h1 id="logo"><a  href="#wrapper">Prestamía</a></h1>
+			<p>Servicio exclusivo al cliente<br />
+				Capital Financiero propio</p>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a style="color: #0c0b0b;" href="#one" class="active">MISIÓN</a></li>
+					<li><a  href="#two">VISIÓN</a></li>
+					<li><a  href="#three">QUIÉNES SOMOS</a></li>
+					<li><a  href="#four">PRODUCTOS QUE OFRECEMOS</a></li>
+					<li><a  href="#five">REQUISITOS</a></li>
+					<li><a  href="#six">CONTÁCTENOS</a></li>
+				</ul>
+			</nav>
+			<footer>
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/PrestaMia-249278435874202/" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.instagram.com/prestamia/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://wa.me/50761539350" target="_blank" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+					<li><a href="https://wa.me/50769079298" target="_blank" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+					<li><a href="https://s82.gocheapweb.com:2096/" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</footer>
+		</section>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<div class="sticky">
+				<a href="#wrapper" id="sinestilo">
+					<img style="width:100%;"  src="images/ARRIBA.png" alt="">
+				</a>
+			</div>
+			<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+				<section>
+					<div class="image main" >
+						<img src="images/andlogo.png" id="logo1" alt="" />
+					</div>
+					<!-- Slider -->
+
+						<!-- SlidesJS Required: Start Slides -->
+						<!-- The container is used to define the width of the slideshow -->
+						<div class="container1">
+							<div id="slides">
+								<img id="img2" src="images/descarga.jpg" id="imgca"alt="">
+								<img id="img2" src="images/descarga (1).jpg" id="imgca"alt="">
+								<img id="img2" src="images/descarga (2).jpg" id="imgca"alt="">
+								<img id="img2" src="images/images.jpg" id="imgca"alt="">
+								<!--<img src="images/descarga (1).jpg" id="imgca"alt="">
+								<img src="images/descarga (1).jpg" id="imgca"alt="">
+								<img src="images/descarga (1).jpg" id="imgca"alt="">
+								<img src="images/descarga (1).jpg" id="imgca"alt="">
+								<img src="images/descarga (1).jpg" id="imgca"alt="">
+								<img src="images/descarga (1).jpg" id="imgca"alt="">-->
+							</div>
+						</div>
+						<!-- End SlidesJS Required: Start Slides -->
+
+					<div id="one" class="container">
+						<header class="major">
+							<!-- Trabajo realizado, cambair el codigo del color, busca el codigo hex del color que desea y lo cambia dejando el #-->
+							<h2 class="font2" style="color: #f14c19;">MISIÓN</h2>
+							<p class="font3" style="color: #bab8cc;">Brindar un servicio exclusivo al cliente, <br> en tema de Capital Financiero propio.</p>
+						</header>
+						<p class="font3">Para poder solventar las necesidades del cliente a un cincuenta por ciento a corto plazo en tema de Autos,
+							tomando en cuenta los trámites que derive el cliente con el fin de ayudarle en lo que sea necesario de una manera fácil y eficaz.</p>
+						</div>
+					</section>
+
+					<!-- Two -->
+					<section id="two">
+						<div class="container">
+							<!-- Trabajo realizado, cambair el codigo del color, busca el codigo hex del color que desea y lo cambia dejando el #-->
+							<h3 class="font2" style="color: #8A0B18;">VISIÓN</h3>
+							<p class="font3" style="color: #acacac;">Inspirar y Motivar a los miembros de la empresa para que se identifiquen y se comprometan con ella, cimentando así, una base agradable para los clientes, proveedores y público en general que confían en nosotros.</p>
+							<!-- <ul class="feature-icons">
+							<li class="icon solid fa-code">Write all the code</li>
+							<li class="icon solid fa-cubes">Stack small boxes</li>
+							<li class="icon solid fa-book">Read books and stuff</li>
+							<li class="icon solid fa-coffee">Drink much coffee</li>
+							<li class="icon solid fa-bolt">Lightning bolt</li>
+							<li class="icon solid fa-users">Shadow clone technique</li>
+						</ul> -->
+					</div>
+				</section>
+
+				<!-- Three -->
+				<section id="three">
+					<div class="container">
+						<!-- Trabajo realizado, cambair el codigo del color, busca el codigo hex del color que desea y lo cambia dejando el #-->
+						<h3 class="font2"style="color: #8A0B18;">QUIÉNES SOMOS</h3>
+						<p class="font3" style="color: #acacac;">Somos una empresa Familiar dedicada a la necesidad del cliente, TRAMITAMOS AL INSTANTE lo que el cliente necesita, para que no pierda su valioso tiempo en salir de su lugar de trabajo, ahorrándoles tranques y gastos innecesarios, llevando a su área laboral, firmas de documentación, hasta cheques listos para suplir sus necesidades.</p>
+						<!-- <div class="features">
+						<article>
+						<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+						<div class="inner">
+						<h4>Possibly broke spacetime</h4>
+						<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+					</div>
+				</article>
+				<article>
+				<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+				<div class="inner">
+				<h4>Terraformed a small moon</h4>
+				<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+			</div>
+		</article>
+		<article>
+		<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+		<div class="inner">
+		<h4>Snapped dark matter in the wild</h4>
+		<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+	</div>
+</article>
+</div> -->
+</div>
+</section>
+
+<!-- Four -->
+
+<section id="four">
+	<div class="container">
+		<!-- Trabajo realizado, cambair el codigo del color, busca el codigo hex del color que desea y lo cambia dejando el #-->
+		<h3 class="font2" style="color: #8A0B18;">PRODUCTOS QUE OFRECEMOS:</h3>
+		<ul style="color: #acacac;" class="alt font3">
+			<li>Tramites de Autos Nuevos o Usados con garantía </li>
+			<li>Tramites de préstamos personales</li>
+			<li>Tramites de préstamos rapid cash</li>
+			<li>Tramites de Hipotecas</li>
+			<li>Consolidaciones bancarias</li>
+			<li>Cancelaciones de tarjetas de crédito</li>
+			<li>Tramites de licencia A.B.C.D.E.E1A.E2B.E3C.F.G.H.I. Ampliación y Cursos de manejo.</li>
+			<li>Tramites Notariales, legales y personales.</li>
+			<li>Declaración de Renta</li>
+			<li>Aviso de Operaciones.</li>
+
+		</ul>
+	</div>
+</section>
+<!-- Five -->
+
+<section id="five">
+	<div class="container">
+		<!-- Trabajo realizado, cambair el codigo del color, busca el codigo hex del color que desea y lo cambia dejando el #-->
+		<h3 class="font2" style="color: #8A0B18;">REQUISITOS:</h3>
+		<ul class="alt font3" style="color: #acacac;">
+			<li>Asalariados</li>
+			<li>Gobierno</li>
+			<li>Pyme con o sin declaraciones de renta.</li>
+			<li>Somos flexibles con el tema de APC, Contamos con una alianza comercial de Bancos, Apoyo Financieros y Cooperativas, ofreciéndo un excelente plazo, letra e interés preferencial, pensando siempre en la economía del cliente.</li>
+		</ul>
+	</div>
+</section>
+
+<!-- Six -->
+
+<section id="six">
+	<section class="layout2">
+		<!-- Trabajo realizado, cambair el codigo del color, busca el codigo hex del color que desea y lo cambia dejando el #-->
+		<div class="font2" class="contact"><h3 style="color: #8A0B18;">CONTÁCTENOS: </h3></div>
+		
+		<!--Modificar el numero(va como esta codigo de pais de area y su numero) y el texto tiene que dajer el %20 que es el espacio -->
+		
+		<div class="imgcont"><a href="https://wa.me/5491162371236?text=Me%20interesa%20el%20servicio"><img class="imgcon"src="images/pixlr-bg-result.png" alt=""></a></div>
+	  </section>
+	<!--<div class="container">
+		<h3 style="color: #8A0B18;">CONTÁCTENOS</h3><img src="images/pixlr-bg-result.png" alt="">
+		 <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p> 
+		<form method="post" action="#">
+			<div class="row gtr-uniform">
+				<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Nombre" /></div>
+				<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+				<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Asunto" /></div>
+				<div class="col-12"><textarea name="message" id="message" placeholder="Mensaje" rows="6"></textarea></div>
+				<div class="col-12">
+					<ul class="actions">
+						<li><input type="submit" class="primary" value="Enviar" /></li>
+						<li><input type="reset" value="Limpiar" /></li>
+					</ul>
+				</div>
+			</div>
+		</form>
+	</div>-->
+</section>
+
+<section>
+	<center>
+		<!-- Trabajo realizado, cambair el codigo del color, busca el codigo hex del color que desea y lo cambia dejando el #-->
+		<h3 class="font2" style="color: #ee091f;">NUESTRO COMERCIAL</h3>
+		<p>Comercial</p>
+	</center>
+</section>
+
+<!-- Seven -->
+
+<!-- <section id="seven">
+<div class="container">
+<h3>Elements</h3>
+
+<section>
+<h4>Text</h4>
+<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+<hr />
+<header>
+<h4>Heading with a Subtitle</h4>
+<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+</header>
+<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+<header>
+<h5>Heading with a Subtitle</h5>
+<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+</header>
+<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+<hr />
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+<hr />
+<h5>Blockquote</h5>
+<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+<h5>Preformatted</h5>
+<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+</section>
+
+<section>
+<h4>Lists</h4>
+<div class="row">
+<div class="col-6 col-12-xsmall">
+<h5>Unordered</h5>
+<ul>
+<li>Dolor pulvinar etiam magna etiam.</li>
+<li>Sagittis adipiscing lorem eleifend.</li>
+<li>Felis enim feugiat dolore viverra.</li>
+</ul>
+<h5>Alternate</h5>
+<ul class="alt">
+<li>Dolor pulvinar etiam magna etiam.</li>
+<li>Sagittis adipiscing lorem eleifend.</li>
+<li>Felis enim feugiat dolore viverra.</li>
+</ul>
+</div>
+<div class="col-6 col-12-xsmall">
+<h5>Ordered</h5>
+<ol>
+<li>Dolor pulvinar etiam magna etiam.</li>
+<li>Etiam vel felis at lorem sed viverra.</li>
+<li>Felis enim feugiat dolore viverra.</li>
+<li>Dolor pulvinar etiam magna etiam.</li>
+<li>Etiam vel felis at lorem sed viverra.</li>
+<li>Felis enim feugiat dolore viverra.</li>
+</ol>
+<h5>Icons</h5>
+<ul class="icons">
+<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+</ul>
+</div>
+</div>
+<h5>Actions</h5>
+<ul class="actions">
+<li><a href="#" class="button primary">Default</a></li>
+<li><a href="#" class="button">Default</a></li>
+<li><a href="#" class="button alt">Default</a></li>
+</ul>
+<ul class="actions small">
+<li><a href="#" class="button primary small">Small</a></li>
+<li><a href="#" class="button small">Small</a></li>
+<li><a href="#" class="button alt small">Small</a></li>
+</ul>
+<div class="row">
+<div class="col-3 col-6-medium col-12-xsmall">
+<ul class="actions stacked">
+<li><a href="#" class="button primary">Default</a></li>
+<li><a href="#" class="button">Default</a></li>
+<li><a href="#" class="button alt">Default</a></li>
+</ul>
+</div>
+<div class="col-3 col-6 col-12-xsmall">
+<ul class="actions stacked">
+<li><a href="#" class="button primary small">Small</a></li>
+<li><a href="#" class="button small">Small</a></li>
+<li><a href="#" class="button alt small">Small</a></li>
+</ul>
+</div>
+<div class="col-3 col-6-medium col-12-xsmall">
+<ul class="actions stacked">
+<li><a href="#" class="button primary fit">Default</a></li>
+<li><a href="#" class="button fit">Default</a></li>
+<li><a href="#" class="button alt fit">Default</a></li>
+</ul>
+</div>
+<div class="col-3 col-6-medium col-12-xsmall">
+<ul class="actions stacked">
+<li><a href="#" class="button primary small fit">Small</a></li>
+<li><a href="#" class="button small fit">Small</a></li>
+<li><a href="#" class="button alt small fit">Small</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<h4>Table</h4>
+<h5>Default</h5>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item One</td>
+<td>Ante turpis integer aliquet porttitor.</td>
+<td>29.99</td>
+</tr>
+<tr>
+<td>Item Two</td>
+<td>Vis ac commodo adipiscing arcu aliquet.</td>
+<td>19.99</td>
+</tr>
+<tr>
+<td>Item Three</td>
+<td> Morbi faucibus arcu accumsan lorem.</td>
+<td>29.99</td>
+</tr>
+<tr>
+<td>Item Four</td>
+<td>Vitae integer tempus condimentum.</td>
+<td>19.99</td>
+</tr>
+<tr>
+<td>Item Five</td>
+<td>Ante turpis integer aliquet porttitor.</td>
+<td>29.99</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="2"></td>
+<td>100.00</td>
+</tr>
+</tfoot>
+</table>
+</div>
+
+<h5>Alternate</h5>
+<div class="table-wrapper">
+<table class="alt">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Item One</td>
+<td>Ante turpis integer aliquet porttitor.</td>
+<td>29.99</td>
+</tr>
+<tr>
+<td>Item Two</td>
+<td>Vis ac commodo adipiscing arcu aliquet.</td>
+<td>19.99</td>
+</tr>
+<tr>
+<td>Item Three</td>
+<td> Morbi faucibus arcu accumsan lorem.</td>
+<td>29.99</td>
+</tr>
+<tr>
+<td>Item Four</td>
+<td>Vitae integer tempus condimentum.</td>
+<td>19.99</td>
+</tr>
+<tr>
+<td>Item Five</td>
+<td>Ante turpis integer aliquet porttitor.</td>
+<td>29.99</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="2"></td>
+<td>100.00</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</section>
+
+<section>
+<h4>Buttons</h4>
+<ul class="actions">
+<li><a href="#" class="button primary">Primary</a></li>
+<li><a href="#" class="button">Default</a></li>
+<li><a href="#" class="button alt">Alternate</a></li>
+</ul>
+<ul class="actions">
+<li><a href="#" class="button primary large">Large</a></li>
+<li><a href="#" class="button">Default</a></li>
+<li><a href="#" class="button alt small">Small</a></li>
+</ul>
+<ul class="actions fit">
+<li><a href="#" class="button primary fit">Fit</a></li>
+<li><a href="#" class="button fit">Fit</a></li>
+<li><a href="#" class="button alt fit">Fit</a></li>
+</ul>
+<ul class="actions fit small">
+<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+<li><a href="#" class="button fit small">Fit + Small</a></li>
+<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+</ul>
+<ul class="actions">
+<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
+</ul>
+<ul class="actions">
+<li><span class="button primary disabled">Primary</span></li>
+<li><span class="button disabled">Default</span></li>
+<li><span class="button alt disabled">Alternate</span></li>
+</ul>
+</section>
+
+<section>
+<h4>Form</h4>
+<form method="post" action="#">
+<div class="row gtr-uniform">
+<div class="col-6 col-12-xsmall">
+<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+</div>
+<div class="col-6 col-12-xsmall">
+<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+</div>
+<div class="col-12">
+<select name="demo-category" id="demo-category">
+<option value="">- Category -</option>
+<option value="1">Manufacturing</option>
+<option value="1">Shipping</option>
+<option value="1">Administration</option>
+<option value="1">Human Resources</option>
+</select>
+</div>
+<div class="col-4 col-12-medium">
+<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+<label for="demo-priority-low">Low Priority</label>
+</div>
+<div class="col-4 col-12-medium">
+<input type="radio" id="demo-priority-normal" name="demo-priority">
+<label for="demo-priority-normal">Normal Priority</label>
+</div>
+<div class="col-4 col-12-medium">
+<input type="radio" id="demo-priority-high" name="demo-priority">
+<label for="demo-priority-high">High Priority</label>
+</div>
+<div class="col-6 col-12-medium">
+<input type="checkbox" id="demo-copy" name="demo-copy">
+<label for="demo-copy">Email me a copy of this message</label>
+</div>
+<div class="col-6 col-12-medium">
+<input type="checkbox" id="demo-human" name="demo-human" checked>
+<label for="demo-human">I am a human and not a robot</label>
+</div>
+<div class="col-12">
+<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+</div>
+<div class="col-12">
+<ul class="actions">
+<li><input type="submit" value="Send Message" /></li>
+<li><input type="reset" value="Reset" class="alt" /></li>
+</ul>
+</div>
+</div>
+</form>
+</section>
+
+<section>
+<h4>Image</h4>
+<h5>Fit</h5>
+<span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+<div class="box alt">
+<div class="row gtr-50 gtr-uniform">
+<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+</div>
+</div>
+<h5>Left &amp; Right</h5>
+<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+</section>
+
+</div>
+</section> -->
+
+
+<!-- </div> -->
+
+<!-- Footer -->
+<!-- <section id="footer">
+<div class="container">
+<ul class="copyright">
+<li>&copy; Untitled. All rights reserved.</li>
+<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+</ul>
+</div>
+</section> -->
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<!-- SlidesJS Required: Link to jQuery -->
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+<!-- End SlidesJS Required -->
+
+<!-- SlidesJS Required: Link to jquery.slides.js -->
+<script src="assets/js/jquery.slides.min.js"></script>
+<!-- End SlidesJS Required -->
+
+<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+<script>
+$(function() {
+	if (screen.width < 1024) 
+	$('#slides').slidesjs({
+		width: 940,
+		height: 1528,
+		//height: 528,
+		play: {
+			active: true,
+			auto: true,
+			interval: 3000,
+			swap: true
+		}
+	});
+else {
+	$('#slides').slidesjs({
+		width: 940,
+		height: 528,
+		//height: 528,
+		play: {
+			active: true,
+			auto: true,
+			interval: 3000,
+			swap: true
+		}
+	});}
+});
+</script>
+<!-- End SlidesJS Required -->
+</body>
+</html>
